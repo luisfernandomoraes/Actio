@@ -1,0 +1,13 @@
+namespace Actio.Common.Commands
+{
+    using System;
+    public class CreateActivity : IAuthenticatedCommand
+    {
+        public Guid Id { get; set; }
+        public Guid UserId { set; get; }
+        public string Category { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public DateTime CreatedAt { get; set; }
+    }
+}
